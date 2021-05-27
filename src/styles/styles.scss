@@ -1,3 +1,11 @@
 @import './settings';
+
+// Pages Styles
+
+@import './pages/home';
+@import './pages/knowledges';
+
+// Components Styles
+
 @import './components/navbar';
-@import './pages/accueil';
+@import './components/social';

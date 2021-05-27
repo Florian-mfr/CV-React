@@ -1,0 +1,41 @@
+h1 {
+    color:$white;
+    font-size: 100px;
+    margin: 120px 0 0 50px;
+    span {
+        color: $color-1;
+    }
+}
+.home-container {
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $white;
+    opacity: 0.9;
+    width: 80%;
+    padding: 50px;
+    border-radius: 10px;
+    .container-left {
+        width: 40%;
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            background-image: url("../../assets/MyPic.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            float: left;
+            shape-outside: circle();
+            margin: 0 20px 10px 0;
+            box-shadow: 0 2px 15px $black;
+        }
+        p {
+            font-size: 1.6rem;
+        }
+    }
+    .container-right {
+        width: 40%;
+    }    
+}

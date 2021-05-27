@@ -4,7 +4,7 @@ $font: 'Roboto', sans-serif;
 
 $white: #dfdfdf;
 $black: #020c36;
-$color-1: #e3be2b;
+$color-1: #d6b637;
 $color-2: #64237f;
 
 *, ::before, ::after {
@@ -30,4 +30,9 @@ li {
 a {
     text-decoration: none;
     cursor: pointer;
+    color: $black;
+}
+.home, .knowledges, .portfolio, .contact {
+    display: flex;
+    flex-direction: column;
 }

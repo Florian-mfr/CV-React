@@ -1,0 +1,42 @@
+.knowledges-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: $white;
+    opacity: 0.9;
+    width: 80%;
+    padding: 50px;
+    border-radius: 10px;
+    .competences {
+        display: flex;
+        flex-direction: column;
+        .progress-bar {
+            height: 12px;
+            width: 200px;
+            background-color: rgb(189, 189, 189);
+            border-radius: 5px;
+            margin: 5px 0;
+            overflow: hidden;
+        }
+        .progress1 {
+            height: 100%;
+            width: 70%;
+            background-color: $color-1;
+        } 
+        .progress2 {
+            height: 100%;
+            width: 50%;
+            background-color: $color-1;
+        } 
+        .progress3 {
+            height: 100%;
+            width: 25%;
+            background-color: $color-1;
+        } 
+    }
+    
+}
