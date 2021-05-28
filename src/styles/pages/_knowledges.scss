@@ -9,11 +9,17 @@
     background-color: $white;
     opacity: 0.9;
     width: 80%;
+    max-width: 1200px;
     padding: 50px;
     border-radius: 10px;
+    font-size: 1.2rem;
     .competences {
         display: flex;
         flex-direction: column;
+        margin: 10px;
+        h2 {
+            margin-bottom: 20px;
+        }
         .progress-bar {
             height: 12px;
             width: 200px;
@@ -37,6 +43,65 @@
             width: 25%;
             background-color: $color-1;
         } 
+    }
+    .langages {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        h2 {
+            margin-bottom: 20px;
+        }
+        div {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        span {
+            margin: 5px;
+            padding: 5px;
+            background-color: $color-1;
+            border-radius: 5px;
+            color: $black;
+        }
+    }
+    
+    .atouts {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        h2 {
+            margin-bottom: 20px;
+        }
+        span {
+            margin: 5px 0;
+        }
+        i {
+            font-size: 1.5rem;
+            color: $color-2;
+        }
+
+    }
+
+    .langues {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        h2 {
+            margin-bottom: 20px;
+        }
+        span {
+            margin: 5px 0;
+        }
+        div i {
+            margin: 0 3px;
+            color: rgb(189, 189, 189);;
+        }
+        div .full {
+            color: $color-1;
+        }
+        .level {
+            color: #3f3f3f;
+            font-size: 0.9rem;
+        }
     }
     
 }

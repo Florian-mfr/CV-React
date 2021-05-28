@@ -25,12 +25,24 @@ const Knowledges = () => {
                 </div>
                 <div className='langages'>
                     <h2>Langages</h2>
+                    <div><span>Html5</span><span>Css3</span><span>Javascript</span><span>VueJS</span><span>ReactJS</span><span>NodeJS</span><span>SQL</span></div>
+                    
                 </div>
                 <div className='atouts'>
                     <h2>Mes atouts</h2>
+                    <span><i class="fas fa-brain"></i> Curiosité Intellectuelle</span>
+                    <span><i class="fas fa-forward"></i> Prise d'initiative</span>
+                    <span><i class="fas fa-paint-brush"></i> Créativité</span>
+                    <span><i class="fas fa-filter"></i> Agilité</span>
                 </div>
                 <div className='langues'>
                     <h2>Langues</h2>
+                    <span>Anglais</span>
+                    <div><i class="fas fa-circle full"></i><i class="fas fa-circle full"></i><i class="fas fa-circle full"></i><i class="fas fa-circle full"></i><i class="fas fa-circle full"></i><i class="fas fa-circle full"></i><i class="fas fa-circle full"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>
+                    <span className='level'>Indépendant</span>
+                    <span>Espagnol</span>
+                    <div><i class="fas fa-circle full"></i><i class="fas fa-circle full"></i><i class="fas fa-circle full"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>
+                    <span className='level'>Élémentaire</span>
                 </div>
             </div>
         </div>
