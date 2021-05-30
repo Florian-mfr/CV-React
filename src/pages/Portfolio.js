@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import ProjectList from '../components/ProjectList';
 import Social from '../components/Social';
 
 const Portfolio = () => {
@@ -7,7 +8,7 @@ const Portfolio = () => {
         <div className='portfolio'>
             <Navbar />
             <Social />
-            <h1>Portfolio</h1>
+            <ProjectList />
         </div>
     );
 };
