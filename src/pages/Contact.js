@@ -1,4 +1,5 @@
 import React from 'react';
+import Form from '../components/Form';
 import Navbar from '../components/Navbar';
 import Social from '../components/Social';
 
@@ -7,7 +8,7 @@ const Contact = () => {
         <div className='contact'>
             <Navbar />
             <Social />
-            <h1>Contact</h1>
+            <Form />
         </div>
     );
 };

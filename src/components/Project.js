@@ -7,7 +7,7 @@ class Project extends Component {
         return (
             <div className='project-card'>
                 <div className='div-img'>
-                    <img src={picture} alt='project picture' />
+                    <img src={picture} alt='project picture' className='img'/>
                 </div>
                 <div className='div-info'>
                     <div className='head'>
@@ -23,6 +23,9 @@ class Project extends Component {
                     <p>
                         {info}
                     </p>
+                    <a href={source}>
+                        <button>Code source</button>
+                    </a>
                 </div>
             </div>
         );

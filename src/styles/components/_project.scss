@@ -1,0 +1,76 @@
+.portfolio-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    opacity: 0.95;
+    width: 80%;
+    max-width: 1200px;
+    padding: 50px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin-top: 250px;
+}
+.project-card {
+    display: flex;
+    border: 0.1px solid $black2;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5px 0;
+    .div-info {
+        width: 100%;
+        margin-left: 20px;
+        display: grid;
+        grid-template-rows: 30px 1fr 40px;
+        margin: 15px;
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h3 {
+                margin: 5px;
+                font-size: 1.6rem;
+            }
+            i {
+                font-size: 2rem;
+                margin: 5px;
+            }
+        }
+        p {
+            margin: auto 5px;
+            
+        }
+        a {
+            margin: 0 auto;
+        }
+        button {
+            width: 150px;
+            padding: 5px;
+            background-color: $white;
+            color: $color-1;
+            font-size: 1.2rem;
+            border: none;
+            box-shadow: 0 0 5px .3px $color-1;
+            transition: color 0.8s ease-in-out;
+            transition: background-color 0.4s ease-in-out;
+        }
+        button:hover {
+            background-color: $color-1;
+            color: $white;
+        }
+    }
+}
+.project-card:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+.img {
+    width: 300px;
+    height: 100%;
+    transition: width .8s ease;
+}
+.img:hover {
+    width: 500px;
+}

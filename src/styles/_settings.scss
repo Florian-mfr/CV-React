@@ -4,9 +4,10 @@ $font: 'Roboto', sans-serif;
 
 $white: #dfdfdf;
 $black: #020c36;
+$black2: #1b0140;
 //$color-1: #D6A184;
-$color-1: #a3d3b2;
-$color-2: #64237f;
+$color-1: #dd3859;
+$color-2: #6428c4;
 
 *, ::before, ::after {
     box-sizing: border-box;
@@ -17,10 +18,11 @@ $color-2: #64237f;
 body {
     position: relative;
     height: 100vh;
-    background: url(../assets/3529957.jpg);
+    background: url(../assets/bg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: $font;
+    background-color: $black2;
 }
 button {
     cursor: pointer;
