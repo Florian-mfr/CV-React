@@ -1,4 +1,6 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
+//init("user_3eiF78UDZojG9rt8YcZgU");
 
 const Form = () => {
     const [name, setName] = useState("");
@@ -7,10 +9,22 @@ const Form = () => {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
+    const errorHandler = () => {
+        const errorDiv = document.querySelector('.form-message');
+        errorDiv.style.display = 'block';
+        errorDiv.style.animation = 'squeeze .5s forwards';
+        setTimeout(() => {
+            errorDiv.style.animation = 'none'
+        }, 500);
+    }
+
+    const regex =
+        /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        sendFeedback("***TEMPLAYE_ID***", {
+        sendFeedback("template_mqbu0ab", {
             name,
             company,
             phone,
@@ -21,76 +35,93 @@ const Form = () => {
 
     const sendFeedback = (templateId, variables) => {
 
-        window.emailjs
-            .send("gmail", templateId, variables)
-            .then((res) => {
-                console.log('success !');
-                setName("");
-                setCompany("");
-                setPhone("");
-                setEmail("");
-                setMessage("");
-            })
-            .catch(
-                (err) =>
-                    document.querySelector('.form-message').innerHTML =
-                    "Une erreur s'est produite, veuillez réessayer.")
+        if (email.match(regex)) {
+            if (message) {
+                emailjs
+                    .send("service_uox76mq", templateId, variables, "user_3eiF78UDZojG9rt8YcZgU")
+                    .then((res) => {
+                        console.log('success !');
+                        setName("");
+                        setCompany("");
+                        setPhone("");
+                        setEmail("");
+                        setMessage("");
+                    })
+                    .catch(
+                        (err) =>
+                            document.querySelector('.form-message').innerHTML =
+                            "Une erreur s'est produite, veuillez réessayer.");
+                            errorHandler();
+            } else {
+                document.querySelector('.form-message').innerHTML = "Veuillez écrire un message";
+                errorHandler();
+            }
+
+        } else {
+            document.querySelector('.form-message').innerHTML = "Email non valide";
+            errorHandler();
+        }
+
+
     };
 
     return (
-        <form className="contact-form">
-            <h2>Me contacter</h2>
+        <form className="contact-form" onSubmit={handleSubmit}>
+            <h2>Contactez-moi</h2>
             <div className="form-content">
                 <input
                     type="text"
                     id="name"
                     name="name"
                     onChange={(e) => setName(e.target.value)}
-                    placeholder="nom *"
+                    placeholder="Nom"
                     value={name}
                     autoComplete="off"
+                    className='input'
                 />
                 <input
                     type="text"
                     id="company"
                     name="company"
                     onChange={(e) => setCompany(e.target.value)}
-                    placeholder="société"
+                    placeholder="Société"
                     value={company}
+                    className='input'
                 />
                 <input
                     type="text"
                     id="phone"
                     name="phone"
                     onChange={(e) => setPhone(e.target.value)}
-                    placeholder="téléphone"
+                    placeholder="Téléphone"
                     value={phone}
+                    className='input'
                 />
-                <div className="email-content">
-                    <label id="not-mail">Email non valide</label>
-                    <input
-                        type="mail"
-                        id="email"
-                        name="email"
-                        onChange={(e) => setEmail(e.target.value)}
-                        placeholder="email *"
-                        value={email}
-                        autoComplete="off"
-                    />
-                </div>
+                <input
+                    type="mail"
+                    id="email"
+                    name="email"
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Email *"
+                    value={email}
+                    autoComplete="off"
+                    className='input'
+                />
                 <textarea
                     id="message"
                     name="message"
                     onChange={(e) => setMessage(e.target.value)}
-                    placeholder="message *"
+                    placeholder="Message *"
+                    cols='22'
+                    rows='5'
                     value={message}
+                    className='input'
                 />
             </div>
             <input
                 className="button"
-                type="button"
+                type="submit"
                 value="Envoyer"
-                onClick={handleSubmit}
             />
             <div className="form-message"></div>
         </form>

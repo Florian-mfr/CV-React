@@ -50,15 +50,15 @@
             width: 150px;
             padding: 5px;
             background-color: $white;
-            color: $color-1;
+            color: $color-2;
             font-size: 1.2rem;
             border: none;
-            box-shadow: 0 0 5px .3px $color-1;
+            box-shadow: 0 0 5px .3px $color-2;
             transition: color 0.8s ease-in-out;
             transition: background-color 0.4s ease-in-out;
         }
         button:hover {
-            background-color: $color-1;
+            background-color: $color-2;
             color: $white;
         }
     }

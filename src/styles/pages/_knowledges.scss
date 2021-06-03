@@ -35,12 +35,12 @@
         } 
         .progress2 {
             height: 100%;
-            width: 50%;
+            width: 45%;
             background-color: $color-1;
         } 
         .progress3 {
             height: 100%;
-            width: 25%;
+            width: 15%;
             background-color: $color-1;
         } 
     }
@@ -50,18 +50,22 @@
         margin: 10px;
         h2 {
             margin-bottom: 20px;
+            span {
+                font-size: 12px;
+            }
         }
         div {
             display: flex;
             flex-wrap: wrap;
+            span {
+                margin: 5px;
+                padding: 5px;
+                background-color: $color-1;
+                border-radius: 5px;
+                color: $white;
+            }
         }
-        span {
-            margin: 5px;
-            padding: 5px;
-            background-color: $color-1;
-            border-radius: 5px;
-            color: $white;
-        }
+        
     }
     
     .atouts {

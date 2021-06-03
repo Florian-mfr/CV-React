@@ -18,14 +18,14 @@ const Knowledges = () => {
                     <div className='progress-bar'>
                         <div className='progress2' role='progressbar'></div>
                     </div>
-                    <span>UX/UI Design</span>
+                    <span>UX/UI</span>
                     <div className='progress-bar'>
                         <div className='progress3' role='progressbar'></div>
                     </div>
                 </div>
                 <div className='langages'>
-                    <h2>Langages</h2>
-                    <div><span>Html5</span><span>Css3</span><span>Javascript</span><span>VueJS</span><span>ReactJS</span><span>NodeJS</span><span>SQL</span></div>
+                    <h2>Langages / Outils <span>(classé par ordre de maitrise)</span></h2>
+                    <div><span>Html5</span><span>Css3</span><span>Javascript</span><span>VueJS</span><span>ReactJS</span><span>NodeJS</span><span>NoSQL</span><span>SQL</span><span>Figma</span><span>Photoshop</span></div>
                     
                 </div>
                 <div className='atouts'>
