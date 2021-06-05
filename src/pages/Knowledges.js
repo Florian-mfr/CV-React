@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from 'framer-motion'
+
 import Navbar from '../components/Navbar';
 import Social from '../components/Social';
 
@@ -7,7 +9,13 @@ const Knowledges = () => {
         <div className='knowledges'>
             <Navbar />
             <Social />
-            <div className='knowledges-container'>
+            <motion.div 
+            className='knowledges-container'
+            initial={{ opacity: 0, x:100 }}
+            animate={{opacity: 1, x: 0}}
+            exit={{opacity: 0, x: -100}}
+            transition={{ duration: 0.5 }}
+            >
                 <div className='competences'>
                     <h2>Mes compétences</h2>
                     <span>Front-end</span>
@@ -25,7 +33,7 @@ const Knowledges = () => {
                 </div>
                 <div className='langages'>
                     <h2>Langages / Outils <span>(classé par ordre de maitrise)</span></h2>
-                    <div><span>Html5</span><span>Css3</span><span>Javascript</span><span>VueJS</span><span>ReactJS</span><span>NodeJS</span><span>NoSQL</span><span>SQL</span><span>Figma</span><span>Photoshop</span></div>
+                    <div><span>Html5</span><span>Css3</span><span>Javascript</span><span>VueJS</span><span>ReactJS</span><span>ExpressJS</span><span>NodeJS</span><span>NoSQL</span><span>SQL</span><span>Figma</span><span>Photoshop</span></div>
                     
                 </div>
                 <div className='atouts'>
@@ -44,7 +52,7 @@ const Knowledges = () => {
                     <div><i class="fas fa-circle full"></i><i class="fas fa-circle full"></i><i class="fas fa-circle full"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>
                     <span className='level'>Élémentaire</span>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 };

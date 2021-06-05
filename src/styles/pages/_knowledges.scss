@@ -1,8 +1,5 @@
 .knowledges-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 150px auto 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -108,4 +105,15 @@
         }
     }
     
+}
+@media  screen and (max-width: 865px) {
+    .knowledges-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:500px) {
+    .knowledges-container {
+        width: 100%;
+    }
 }

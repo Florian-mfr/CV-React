@@ -9,6 +9,9 @@ const Form = () => {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+
     const errorHandler = () => {
         const errorDiv = document.querySelector('.form-message');
         errorDiv.style.display = 'block';
@@ -19,10 +22,15 @@ const Form = () => {
     }
 
     const regex =
-        /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        messageInput.style.border = 'none';
+        messageInput.style.boxShadow = '2px 2px 5px #9b9b9b';
+        emailInput.style.boxShadow = '2px 2px 5px #9b9b9b';
+        emailInput.style.border = 'none';
 
         sendFeedback("template_mqbu0ab", {
             name,
@@ -55,11 +63,16 @@ const Form = () => {
             } else {
                 document.querySelector('.form-message').innerHTML = "Veuillez écrire un message";
                 errorHandler();
+                messageInput.style.border = '1px solid rgb(223, 79, 79)';
+                messageInput.style.boxShadow = '2px 2px 5px rgb(223, 79, 79)';
+
             }
 
         } else {
             document.querySelector('.form-message').innerHTML = "Email non valide";
             errorHandler();
+                emailInput.style.boxShadow = '2px 2px 5px rgb(223, 79, 79)';
+                emailInput.style.border = '1px solid rgb(223, 79, 79)';
         }
 
 

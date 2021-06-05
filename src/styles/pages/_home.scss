@@ -53,15 +53,20 @@ h1 {
                 width: 200px;
                 height: 200px;
                 background-image: linear-gradient(45deg, $color-1, $color-2);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 48px;
+                font-family: 'Satisfy', cursive;
             }
             .top {
                 transform: rotateX(90deg) translateZ(100px);
             }
             .bottom {
-                transform: rotateX(90deg) translateZ(-100px);
+                transform: rotateX(270deg) translateZ(100px);
             }
             .left {
-                transform: rotateY(90deg) translateZ(-100px);
+                transform: rotateY(270deg) translateZ(100px);
             }
             .right {
                 transform: rotateY(90deg) translateZ(100px);
@@ -70,7 +75,7 @@ h1 {
                 transform: rotateZ(90deg) translateZ(100px);
             }
             .back {
-                transform: rotateZ(90deg) translateZ(-100px);
+                transform: rotateY(180deg) translateZ(100px);
             }
         }
     }    
@@ -81,6 +86,25 @@ h1 {
         transform: rotateX(0deg) rotateY(0deg);
     }
     to {
-        transform: rotateX(360deg) rotateY(360deg);
+        transform: rotateX(-720deg) rotateY(360deg);
+    }
+}
+
+@media screen and (max-width:1350px) {
+    h1 {
+        text-align: center;
+        margin: 120px auto 0;
+        font-size: 80px;
+    }
+    .home-container {
+        margin: 10px auto;
+        flex-direction: column;
+        .container-left {
+            width: 100%;
+            height: 40%;
+        }
+        .container-right {
+            margin: 30px auto;
+        }
     }
 }

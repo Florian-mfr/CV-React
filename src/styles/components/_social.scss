@@ -1,6 +1,6 @@
 .social ul {
     position: absolute;
-    right: 3%;
+    right: 2%;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
@@ -26,5 +26,10 @@
     }
     .social-icon {
         font-size: 35px;
+    }
+}
+@media screen and (max-width:850px) {
+    .social {
+        display: none;
     }
 }
