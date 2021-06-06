@@ -7,13 +7,12 @@ import Contact from './pages/Contact';
 import Knowledges from './pages/Knowledges';
 import Portfolio from './pages/Portfolio';
 import NotFound from './pages/NotFound';
-//import { Router } from 'react-router';
 
 const App = () => {
   return (
     <div>
-      <AnimatePresence>
-        <BrowserRouter>
+      <BrowserRouter>
+        <AnimatePresence initial={true} exitBeforeEnter>
           <Switch>
             <Route path='/' exact component={Home} />
             <Route path='/competences' component={Knowledges} />
@@ -21,8 +20,8 @@ const App = () => {
             <Route path='/contact' component={Contact} />
             <Route component={NotFound} />
           </Switch>
-        </BrowserRouter>
-      </AnimatePresence>
+        </AnimatePresence>
+      </BrowserRouter>
     </div >
   );
 };

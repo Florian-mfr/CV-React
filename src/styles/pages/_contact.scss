@@ -15,6 +15,17 @@
         display: flex;
         align-items: center;
         margin: 30px 0;
+        .cv-link {
+            background: $color-2;
+            color: $white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 0 auto;
+            transition: all .3s ease-out;
+        }
+        .cv-link:hover {
+            transform: scale(1.08);
+        }
     }
     .social-icon {
         font-size: 35px;
