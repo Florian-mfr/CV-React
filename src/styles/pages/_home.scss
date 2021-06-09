@@ -14,7 +14,7 @@ h1 {
     background-color: $white;
     opacity: 0.95;
     width: 80%;
-    padding: 50px;
+    padding: 20px;
     border-radius: 10px;
     .container-left {
         width: 40%;
@@ -106,5 +106,24 @@ h1 {
         .container-right {
             margin: 30px auto;
         }
+    }
+}
+@media screen and (max-width:500px) {
+    h1 {
+        font-size: 50px;
+        margin-top: 70px;
+    }
+    .home-container {
+        width: 100%;
+        .container-left {
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+            }
+            p {
+                font-size: 1.3rem;
+            }
+        }
+        
     }
 }

@@ -4,7 +4,7 @@
     right: 0;
     width: 100%;
     height: 65px;
-    background-color: $black2;
+    background-image: linear-gradient(180deg, $color-2, $black2);
     
     ul {
         display: flex;
@@ -33,4 +33,64 @@
         font-size: 20px;
         box-shadow: 0 0 10px 2px $color-1;
     }
+}
+.phone-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px 10px 0 0;
+    cursor: pointer;
+    display: none;
+    background: none;
+    border: none;
+    span {
+        display: block;
+        margin: 10px 0;
+        width: 50px;
+        height: 6px;
+        border-radius: 5px;
+        background-color: $white;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .phone-menu {
+        display: block;
+        z-index: 9999;
+    }
+    .navbar {
+        position: absolute;
+        top: 0;
+        right: -300px;
+        width: 50%;
+        height: 100%;
+        background-image: linear-gradient(0deg, $color-2, $black2);
+        animation: slide-in .5s forwards;
+        ul {
+            display: flex;
+            flex-direction: column;
+            margin: 100px auto;
+        }
+        li {
+            margin: 20px auto ;
+        }
+    }
+}
+@keyframes slide-in {
+    from {
+        right: -300px;
+    }
+    to {
+        right: 0;
+    }
+    
+}
+@keyframes slide-out {
+    from {
+        right: 0;
+    }
+    to {
+        right: -300px;
+    }
+    
 }

@@ -11,8 +11,8 @@ import NotFound from './pages/NotFound';
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
-        <AnimatePresence initial={true} exitBeforeEnter>
+      <AnimatePresence exitBeforeEnter>
+        <BrowserRouter>
           <Switch>
             <Route path='/' exact component={Home} />
             <Route path='/competences' component={Knowledges} />
@@ -20,8 +20,8 @@ const App = () => {
             <Route path='/contact' component={Contact} />
             <Route component={NotFound} />
           </Switch>
-        </AnimatePresence>
-      </BrowserRouter>
+        </BrowserRouter>
+      </AnimatePresence>
     </div >
   );
 };

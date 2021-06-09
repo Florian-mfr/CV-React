@@ -5,7 +5,7 @@ import Form from '../components/Form';
 import Navbar from '../components/Navbar';
 import Social from '../components/Social';
 
-const Contact = ({ isVisible }) => {
+const Contact = () => {
     return (
         <div className='contact'>
             <Navbar />
