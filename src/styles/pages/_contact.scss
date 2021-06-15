@@ -1,9 +1,7 @@
 .contact-container {
     margin: 150px auto 50px ;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
     background-color: $white;
     opacity: 0.95;
     width: 80%;
@@ -11,6 +9,16 @@
     padding: 50px;
     border-radius: 10px;
     font-size: 1.2rem;
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+.container-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     .contact-link {
         display: flex;
         align-items: center;
@@ -34,12 +42,12 @@
     }
 }
 @media screen and (max-width:950px) {
-    .contact-container {
+    .container-div {
         flex-direction: column-reverse;
     }
 }
-@media screen and (max-width:500px) {
-    .contact-container {
+@media screen and (max-width:600px) {
+    .contact-container{
         width: 100%;
         margin-top: 80px;
     }

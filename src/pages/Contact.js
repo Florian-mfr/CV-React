@@ -18,18 +18,20 @@ const Contact = () => {
                 transition={{ duration: 0.5 }}
             >
 
-                <Form />
-                <div className='link-container'>
-                    <ul>
-                        <li className='contact-link'><a href='./media/cv2.pdf' target='_blank' className='cv-link'>Voir mon CV</a></li>
-                        <li className='contact-link'><i class="fab fa-linkedin-in social-icon"></i> linkedin.com/in/florianmaffre</li>
-                        <li className='contact-link'><i class="fas fa-phone social-icon"></i> 06 08 10 36 90</li>
-                        <li className='contact-link'><i class="fas fa-envelope social-icon"></i> florian.maffre31@gmail.com</li>
+                <h2>Contactez-moi</h2>
+                <div className='container-div'>
+                    <Form />
+                    <div className='link-container'>
+                        <ul>
+                            <li className='contact-link'><a href='./media/cv2.pdf' target='_blank' className='cv-link'>Voir mon CV</a></li>
+                            <li className='contact-link'><i class="fab fa-linkedin-in social-icon"></i> linkedin.com/in/florianmaffre</li>
+                            <li className='contact-link'><i class="fas fa-phone social-icon"></i> 06 08 10 36 90</li>
+                            <li className='contact-link'><i class="fas fa-envelope social-icon"></i> florian.maffre31@gmail.com</li>
 
-                    </ul>
+                        </ul>
 
+                    </div>
                 </div>
-
             </motion.div>
 
         </div>

@@ -27,6 +27,19 @@ export default function Navbar() {
 
     return (
         <nav className='navbar-container'>
+            <NavLink exact to='/' activeClassName='navActive'>
+                <div className='container-cube'>
+                    <div className='cube'>
+                        <div className='face front'></div>
+                        <div className='face back'></div>
+                        <div className='face left'></div>
+                        <div className='face right'></div>
+                        <div className='face top'></div>
+                        <div className='face bottom'></div>
+                    </div>
+                </div>
+            </NavLink>
+
 
             {(toggleNav || width > 600) && (
                 <div className='navbar'>

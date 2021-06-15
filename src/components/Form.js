@@ -80,7 +80,6 @@ const Form = () => {
 
     return (
         <form className="contact-form" onSubmit={handleSubmit}>
-            <h2>Contactez-moi</h2>
             <div className="form-content">
                 <input
                     type="text"
