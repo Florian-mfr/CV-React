@@ -1,11 +1,21 @@
 export const portfolioData = [
+    
     {
+        id: 6,
+        name: "Mon Portfolio",
+        languages: ["ReactJS", "sass", "Javascript"],
+        languagesIcons: ["fab fa-react", "fab fa-sass", "fab fa-js"],
+        source: "https://github.com/Florian-mfr/cv-react",
+        info: "Création d'un portfolio à l'aide de ReactJS et Sass, utilisation de librairies d'animation javascript, mise en place d'un formulaire de contact, utilisation de hooks et de props.",
+        picture: "./media/img-monsite.png"
+    },
+    {  
         id: 5,
         name: "Groupomania",
         languages: ["VueJS", "Sass", "NodeJS"],
         languagesIcons: ["fab fa-vuejs", "fab fa-sass", "fab fa-node"],
         source: "https://github.com/Florian-mfr/OC_Groupomania",
-        info: "Création d'un réseau social d'entreprise avec un frontend en VueJS, Sass, un backend fait avec NodeJS/Express et une base de données MySQL sur PhpMyAdmin. Gestion des utilisateurs et des posts/commentaires, création d'une interface admin et bonne pratique de code sécurisé",
+        info: "Création d'un réseau social d'entreprise avec un frontend en VueJS, Sass, un backend fait avec NodeJS/Express et une base de données MySQL sur PhpMyAdmin. Gestion des utilisateurs et des posts/commentaires, création d'une interface admin et bonne pratique de code sécurisé.",
         picture: "./media/img-groupomania.png"
     },
     {
@@ -23,7 +33,7 @@ export const portfolioData = [
         languages: ["Html5", "Css3", "JavaScript"],
         languagesIcons: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js"],
         source: "https://github.com/Florian-mfr/OC_Orinoco",
-        info: "Création du frontend d'un MVP de site e-commerce en pur Javascript. Accès à une API, mise en place d'un panier, utilisation du LocalStorage et création d'un plan de test",
+        info: "Création du frontend d'un MVP de site e-commerce en pur Javascript. Accès à une API, mise en place d'un panier, utilisation du LocalStorage et création d'un plan de test.",
         picture: "./media/img-orinoco.png"
     },
     {
@@ -32,17 +42,7 @@ export const portfolioData = [
         languages: ["Html5", "sass"],
         languagesIcons: ["fab fa-html5", "fab fa-sass"],
         source: "https://github.com/Florian-mfr/OC_Ohmyfood",
-        info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus eget eros a aliquet. Aenean facilisis elit quis metus fringilla blandit. Phasellus quis porta lacus. Nunc non felis mattis, posuere.",
+        info: "Intégration d'une maquette avec Html et Sass, utilisation de variables, mixins et création d'animations Css.",
         picture: "./media/img-ohmyfood.png"
     },
-
-    {
-        id: 1,
-        name: "Reservia",
-        languages: ["Html5", "Css3"],
-        languagesIcons: ["fab fa-html5", "fab fa-css3-alt"],
-        source: "https://github.com/Florian-mfr/OC_Reservia",
-        info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus eget eros a aliquet. Aenean facilisis elit quis metus fringilla blandit. Phasellus quis porta lacus. Nunc non felis mattis, posuere.",
-        picture: "./media/img-reservia.png"
-    }
 ]

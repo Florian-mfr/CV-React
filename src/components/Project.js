@@ -23,7 +23,7 @@ class Project extends Component {
                     <p>
                         {info}
                     </p>
-                    <a href={source}>
+                    <a href={source} target='_blank' rel="noreferrer">
                         <button>Code source</button>
                     </a>
                 </div>

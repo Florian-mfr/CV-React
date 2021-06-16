@@ -47,6 +47,7 @@ const Form = () => {
             if (message) {
                 emailjs
                     .send("service_uox76mq", templateId, variables, "user_3eiF78UDZojG9rt8YcZgU")
+                    
                     .then((res) => {
                         console.log('success !');
                         setName("");
@@ -54,6 +55,8 @@ const Form = () => {
                         setPhone("");
                         setEmail("");
                         setMessage("");
+                        document.querySelector('.form-message').innerHTML = "Message envoyer avec succès";
+                        document.querySelector('.form-message').style.backgroundColor = "#258f5a";
                     })
                     .catch(
                         (err) =>
@@ -62,17 +65,17 @@ const Form = () => {
                             errorHandler();
             } else {
                 document.querySelector('.form-message').innerHTML = "Veuillez écrire un message";
-                errorHandler();
                 messageInput.style.border = '1px solid rgb(223, 79, 79)';
                 messageInput.style.boxShadow = '2px 2px 5px rgb(223, 79, 79)';
+                errorHandler();
 
             }
 
         } else {
             document.querySelector('.form-message').innerHTML = "Email non valide";
+            emailInput.style.boxShadow = '2px 2px 5px rgb(223, 79, 79)';
+            emailInput.style.border = '1px solid rgb(223, 79, 79)';
             errorHandler();
-                emailInput.style.boxShadow = '2px 2px 5px rgb(223, 79, 79)';
-                emailInput.style.border = '1px solid rgb(223, 79, 79)';
         }
 
 
