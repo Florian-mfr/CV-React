@@ -6,7 +6,6 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Knowledges from './pages/Knowledges';
 import Portfolio from './pages/Portfolio';
-import NotFound from './pages/NotFound';
 
 const App = () => {
   return (
@@ -18,7 +17,7 @@ const App = () => {
             <Route path='/competences' component={Knowledges} />
             <Route path='/portfolio' component={Portfolio} />
             <Route path='/contact' component={Contact} />
-            <Route component={NotFound} />
+            <Route component={Home} />
           </Switch>
         </BrowserRouter>
       </AnimatePresence>
