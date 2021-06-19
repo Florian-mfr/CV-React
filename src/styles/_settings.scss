@@ -3,11 +3,12 @@
 $font: 'Roboto', sans-serif;
 
 $white: #dfdfdf;
-$black: #020c36;
-$black2: #280652;
+$black: #231123;
+$black2: #231123;
 //$color-1: #258f5a;
-$color-1: #dd3859;
-$color-2: #6428c4;
+$color-1: #93748A;
+$color-2: #0C6492;
+$color-3: #1497DE;
 
 *, ::before, ::after {
     box-sizing: border-box;
@@ -18,9 +19,10 @@ $color-2: #6428c4;
 body {
     position: relative;
     height: 100vh;
-    background: url(../assets/bg2.jpg);
+    background: url(../assets/bgparticules.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     font-family: $font;
     background-color: $black2;
 }

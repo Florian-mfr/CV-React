@@ -14,7 +14,7 @@ export default function Navbar() {
         const changeWidth = () => {
             setWidth(window.innerWidth);
 
-            if (window.innerWidth > 500) {
+            if (window.innerWidth > 600) {
                 setToggleNav(false)
             }
         }

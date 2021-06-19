@@ -47,7 +47,7 @@ const Home = () => {
                         .typeString('<span style="color: #efd81d">Javascript</span>')
                         .pauseFor(1000)
                         .deleteChars(10)
-                        .typeString('<span style="color: #5ed3f3">React</span> / <span style="color: #7fc728">NodeJS</span>')
+                        .typeString('<span style="color: #5ed3f3">React</span> / <span style="color: #359b71">Vue</span>')
                         .pauseFor(1000)
                         .deleteChars(16)
                         .start();
@@ -62,15 +62,15 @@ const Home = () => {
             >
                 <div className='info'>
                     <div className='profile picture'></div>
-                    <p>Bonjour moi c'est Florian, j'ai 23 ans et je suis originaire de Toulouse. Ayant commencé ma jeune carrière professionnelle dans un domaine choisi par défaut, j'ai décidé de me donner à fond dans quelque chose qui me plait...</p>
+                    <p>Bonjour moi c'est Florian, j'ai 23 ans et je suis originaire de Toulouse. Passionné du numérique, du web et de nouvelles technologies depuis plusieurs années, j'ai décidé il y a un peu plus d'un an de consacrer toute mon énergie afin d'en faire mon métier.</p>
                 </div>
                 <div className='info'>
                     <div className='books picture'></div>
-                    <p>...Et miracle, il y a un peu plus d'un an j'ai découvert l'univers du web, j'ai commencé par apprendre en autodidacte pendant quelque mois et voyant que c'était quelque chose qui me passionne, j'ai poursuivi dans cette voie et obtenu mon diplôme de développeur web chez Open Classrooms.</p>
+                    <p>J'ai commencé par apprendre en autodidacte pendant plusieurs mois puis j'ai poursuivi dans cette voie et obtenu mon diplôme de développeur web chez Open Classrooms.</p>
                 </div>
                 <div className='info'>
                     <div className='code picture'></div>
-                    <p>Je continu aujourd'hui encore de développer mes compétences tout en recherchant l'emploi de mes rêves dans ce domaine.</p>
+                    <p>Je continue aujourd'hui encore de développer mes compétences tout en restant à l'affût des dernières évolutions dans ce domaine et je serai ravi de relever vos défis les plus fous !</p>
                 </div>
 
             </motion.div>
