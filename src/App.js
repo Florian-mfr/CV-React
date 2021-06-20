@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { AnimatePresence } from "framer-motion"
+import { AnimatePresence } from "framer-motion";
+import Particles from 'react-particles-js';
+import config from './configParticles';
 
 import Home from './pages/Home';
 import Contact from './pages/Contact';
@@ -10,6 +12,13 @@ import Portfolio from './pages/Portfolio';
 const App = () => {
   return (
     <div>
+      <Particles 
+        params={config}
+        style={{
+          position: "absolute",
+          zIndex: "-1",
+        }}
+      />
       <AnimatePresence exitBeforeEnter>
         <BrowserRouter>
           <Switch>

@@ -6,27 +6,6 @@ import Navbar from '../components/Navbar'
 import Social from '../components/Social';
 
 const Home = () => {
-    /*
-        let app = document.getElementById('typewriter');
-    
-        let typewriter = new Typewriter(app, {
-            loop: true,
-            delay: 75,
-        });
-    
-        typewriter
-            .pauseFor(1000)
-            .typeString('<span style="color: #e96228">Html</span> / <span style="color: #31a4d5">CSS</span>')
-            .pauseFor(500)
-            .deleteChars(10)
-            .typeString('<span style="color: #efd81d">Javascript</span>')
-            .pauseFor(500)
-            .deleteChars(10)
-            .typeString('<span style="color: #5ed3f3">ReactJS</span> / <span style="color: #7fc728">NodeJS</span>')
-            .pauseFor(500)
-            .deleteChars(16)
-            .start();
-    */
     return (
         <div className='home'>
             <Navbar />
@@ -47,7 +26,7 @@ const Home = () => {
                         .typeString('<span style="color: #efd81d">Javascript</span>')
                         .pauseFor(1000)
                         .deleteChars(10)
-                        .typeString('<span style="color: #5ed3f3">React</span> / <span style="color: #359b71">Vue</span>')
+                        .typeString('<span style="color: #5ed3f3">React</span> / <span style="color: #00bb7c">Vue</span>')
                         .pauseFor(1000)
                         .deleteChars(16)
                         .start();
