@@ -15,7 +15,7 @@ const App = () => {
       <Particles 
         params={config}
         style={{
-          position: "absolute",
+          position: "fixed",
           zIndex: "-1",
         }}
       />

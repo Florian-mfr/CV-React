@@ -32,14 +32,14 @@ const Knowledges = () => {
                     </div>
                 </div>
                 <div className='langages'>
-                    <h2>Langages / Outils <span>(classé par ordre de maitrise)</span></h2>
-                    <div><span>Html5</span><span>Css3</span><span>Javascript</span><span>VueJS</span><span>ReactJS</span><span>ExpressJS</span><span>NodeJS</span><span>NoSQL</span><span>SQL</span><span>Figma</span><span>Photoshop</span></div>
+                    <h2>Langages / Outils <span>(classé par ordre de maîtrise)</span></h2>
+                    <div><span>Html5</span><span>Css3</span><span>Javascript</span><span>Github</span><span>VueJS</span><span>ReactJS</span><span>ExpressJS</span><span>NodeJS</span><span>NoSQL</span><span>SQL</span><span>Figma</span><span>Photoshop</span></div>
                     
                 </div>
                 <div className='atouts'>
                     <h2>Mes atouts</h2>
                     <span><i class="fas fa-brain"></i> Curiosité Intellectuelle</span>
-                    <span><i class="fas fa-forward"></i> Prise d'initiative</span>
+                    <span><i class="fas fa-forward"></i> Prise d'initiatives</span>
                     <span><i class="fas fa-paint-brush"></i> Créativité</span>
                     <span><i class="fas fa-filter"></i> Agilité</span>
                 </div>

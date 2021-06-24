@@ -41,7 +41,7 @@ const Home = () => {
             >
                 <div className='info'>
                     <div className='profile picture'></div>
-                    <p>Bonjour moi c'est Florian, j'ai 23 ans et je suis originaire de Toulouse. Passionné du numérique, du web et de nouvelles technologies depuis plusieurs années, j'ai décidé il y a un peu plus d'un an de consacrer toute mon énergie afin d'en faire mon métier.</p>
+                    <p>Bonjour moi c'est Florian, j'ai 23 ans et je suis originaire de Toulouse. Passionné du numérique, du web et de nouvelles technologies depuis plusieurs années, j'ai décidé il y a un peu plus d'un an d'y consacrer toute mon énergie afin d'en faire mon métier.</p>
                 </div>
                 <div className='info'>
                     <div className='books picture'></div>
@@ -49,7 +49,7 @@ const Home = () => {
                 </div>
                 <div className='info'>
                     <div className='code picture'></div>
-                    <p>Je continue aujourd'hui encore de développer mes compétences tout en restant à l'affût des dernières évolutions dans ce domaine et je serai ravi de relever vos défis les plus fous !</p>
+                    <p>Je continue aujourd'hui encore de développer mes compétences tout en restant à l'affût des dernières évolutions dans ce domaine et je serai ravi de réaliser vos projets !</p>
                 </div>
 
             </motion.div>
